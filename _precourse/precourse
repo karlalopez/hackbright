@@ -1,0 +1,31 @@
+http://www.codeskulptor.org/#user39_gDbroG1OmO_8.py
+
+
+
+casos = input()
+casos = int(casos)
+
+for i in range(0,casos):
+
+    num = input()
+    lista = list(map(int, str(num)))
+    #print (*lista)
+    tamanho = len(lista)
+    #print (tamanho)
+
+    for i in range(0,tamanho):
+        counter=0
+        #print ("Vez do: "+str(lista[i]))
+        if lista[i]>0:
+            for j in range(0,tamanho):
+                if lista[j]>0:
+                    #print ("Divide por? "+str(lista[j]))
+                    remainder = (lista[i])%(lista[j])
+                    if remainder == 0:
+                        #print ("I: "+str(lista[i]))
+                        #print ("J: "+str(lista[j]))
+                        counter = counter + 1
+    print (counter)
+
+
+            

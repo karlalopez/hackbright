@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Super Heroes fav desserts</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+      <h1> Super Heroes fav desserts </h1>
+    </div>
+
+    <form action="submit" method="POST">
+
+      <select name="hero">
+        {% for name in heroes_list %}
+          <option value="{{name}}"">{{ name }}</option>
+        {% endfor %}
+      </select>
+
+      <input type="submit" value="Submit"></i>
+    </form>
+
+</body>
+</html>

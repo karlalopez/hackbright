@@ -1,0 +1,21 @@
+<html>
+<body>
+<head>
+  <link href="/static/style.css" rel="stylesheet">
+</head>
+
+<ul>
+
+{% for number in numbers %}
+  <li>
+    {{ number }}
+    {% if (number%2) == 0 %}
+      hahaha
+    {% endif %}
+  </li>
+{% endfor %}
+
+</ul>
+
+</body>
+</html>
